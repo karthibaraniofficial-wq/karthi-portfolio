@@ -331,7 +331,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
                 <span>ESC Close</span>
               </div>
               <div className="flex items-center space-x-1 text-sky-400/80">
-                <span>KARTHI_OS // COMMAND_PALETTE</span>
+                <span>KARTHIKEYAN_OS // COMMAND_PALETTE</span>
               </div>
             </div>
           </motion.div>

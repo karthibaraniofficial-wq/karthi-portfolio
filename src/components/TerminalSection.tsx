@@ -95,7 +95,7 @@ export const TerminalSection: React.FC<TerminalSectionProps> = ({ onPlayClick })
               DEVELOPER TERMINAL
             </h2>
             <p className="mt-2 text-base sm:text-lg text-slate-400 max-w-2xl">
-              Real-time interactive session connected to Karthi's systems registry and operational telemetry kernel.
+              Real-time interactive session connected to Karthikeyan's systems registry and operational telemetry kernel.
             </p>
           </div>
 
@@ -138,7 +138,7 @@ export const TerminalSection: React.FC<TerminalSectionProps> = ({ onPlayClick })
               <span className="w-3 h-3 rounded-full bg-amber-500/80 inline-block" />
               <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
               <span className="text-slate-400 ml-3 text-[11px]">
-                karthi@quantum-node: ~/systems-registry (zsh)
+                karthikeyan@quantum-node: ~/systems-registry (zsh)
               </span>
             </div>
 

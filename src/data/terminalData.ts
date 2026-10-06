@@ -7,7 +7,7 @@ export const TERMINAL_COMMANDS: Record<string, TerminalCommandResponse> = {
   help: {
     type: 'system',
     output: [
-      'AVAILABLE COMMANDS IN KARTHI OS:',
+      'AVAILABLE COMMANDS IN KARTHIKEYAN OS:',
       '  whoami      - Developer profile & engineering directive',
       '  status      - Live system health, active AI models, & telemetry',
       '  projects    - List verified production deployments & systems',
@@ -23,7 +23,7 @@ export const TERMINAL_COMMANDS: Record<string, TerminalCommandResponse> = {
   whoami: {
     type: 'text',
     output: [
-      'OPERATOR: KARTHI',
+      'OPERATOR: KARTHIKEYAN M',
       'TITLE: AI / ML Developer • Full-Stack Builder • Product Creator',
       'DIRECTIVE: "Building intelligent systems that turn ambitious ideas into production products."',
       'CORE FOCUS: Multimodal AI, Autonomous Agent DAGs, Geospatial Digital Twins, High-Reliability Full-Stack Systems.',

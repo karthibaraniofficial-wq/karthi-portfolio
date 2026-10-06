@@ -67,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="group flex items-center space-x-3 text-slate-100 hover:text-sky-400 transition-colors"
         >
           <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-sky-500/10 border border-sky-500/30 group-hover:border-sky-400 transition-all duration-300">
-            <span className="font-mono font-bold text-xs text-sky-400 tracking-tighter">KT</span>
+            <span className="font-mono font-bold text-xs text-sky-400 tracking-tighter">KM</span>
             <span className="absolute -top-1 -right-1 flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -76,7 +76,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div>
             <div className="flex items-center space-x-1.5">
               <span className="font-mono text-sm font-bold tracking-wider text-slate-100 group-hover:text-sky-300 transition-colors">
-                KARTHI
+                KARTHIKEYAN M
               </span>
               <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">
                 AI/ML

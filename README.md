@@ -1,4 +1,4 @@
-# Karthi — AI/ML Developer & Product Creator
+# Karthikeyan M — AI/ML Developer & Product Creator
 
 > **"Building intelligent systems that turn ambitious ideas into verified production products."**
 

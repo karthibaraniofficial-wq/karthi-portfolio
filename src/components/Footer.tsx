@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
           {/* Brand & Directive */}
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start space-x-2 text-white font-bold text-sm">
-              <span className="text-sky-400">KARTHI</span>
+              <span className="text-sky-400">KARTHIKEYAN M</span>
               <span className="text-slate-600">//</span>
               <span>AI / ML DEVELOPER</span>
             </div>
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Copyright & Verification Line */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
           <div>
-            &copy; {new Date().getFullYear()} Karthi (karthibaraniofficial-wq). All systems verified &amp; production audited.
+            &copy; {new Date().getFullYear()} Karthikeyan M (karthibaraniofficial-wq). All systems verified &amp; production audited.
           </div>
 
           <div className="flex items-center space-x-4 text-slate-400">
