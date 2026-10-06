@@ -56,7 +56,11 @@ export const GITHUB_TELEMETRY = {
     { name: 'EARTHMIND', url: 'https://earthmind.vercel.app', status: 'Operational 200' },
     { name: 'CIVICFLOW AI', url: 'https://civilai-mu.vercel.app', status: 'Operational 200' },
     { name: 'LinuxPilot AI', url: 'https://linuxpilot.vercel.app', status: 'Operational 200' },
-    { name: 'XAuralys (Google AI Studio)', url: 'https://ai.studio/apps/35bda2ff-57bc-41ff-9fcd-8685f8fc704d', status: 'Active 200' }
+    { name: 'XAuralys (Google AI Studio)', url: 'https://ai.studio/apps/35bda2ff-57bc-41ff-9fcd-8685f8fc704d', status: 'Active 200' },
+    { name: 'ROADMEMORYAI', url: 'https://github.com/karthibaraniofficial-wq/ROADMEMORYAI', status: 'Active Build' },
+    { name: 'THE_LOST_CORE', url: 'https://github.com/karthibaraniofficial-wq/THE_LOST_CORE', status: 'Engine R&D' },
+    { name: 'UPCYCLE AI', url: 'https://github.com/karthibaraniofficial-wq/UPCYCLEAIV1', status: 'Computer Vision' },
+    { name: 'GEMINI CLONE', url: 'https://github.com/karthibaraniofficial-wq/GEMINICLONE1', status: 'Generative UI' }
   ],
   statsBadgeUrl: 'https://github-readme-stats.vercel.app/api?username=karthibaraniofficial-wq&show_icons=true&theme=transparent&hide_border=true&title_color=38bdf8&text_color=94a3b8&icon_color=818cf8',
   streakBadgeUrl: 'https://github-readme-streak-stats.herokuapp.com/?user=karthibaraniofficial-wq&theme=transparent&hide_border=true&stroke=1e293b&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&currStreakNum=ffffff&sideNums=ffffff&sideLabels=94a3b8'

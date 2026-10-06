@@ -3,7 +3,7 @@ export interface Project {
   sysId: string;
   title: string;
   tagline: string;
-  category: 'Flagship' | 'AI / Autonomous Agents' | 'Geospatial & 3D' | 'Systems & Tools';
+  category: 'Flagship' | 'AI / Autonomous Agents' | 'Geospatial & 3D' | 'Systems & Tools' | 'Computer Vision & Products';
   status: string;
   statusType: 'live' | 'competition' | 'research' | 'active';
   description: string;
@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
     sysId: 'SYS_05',
     title: 'ASTRA-SENTINEL',
     tagline: 'AI Space Situational Awareness & Satellite Fleet Command Platform',
-    category: 'Flagship',
+    category: 'AI / Autonomous Agents',
     status: 'Active R&D • Mission Control',
     statusType: 'active',
     description:
@@ -149,7 +149,7 @@ export const PROJECTS: Project[] = [
     ],
     tags: ['TypeScript', 'FastAPI', 'Orbital Mechanics', 'Three.js', 'Multi-Agent', 'Mission Control'],
     repoUrl: 'https://github.com/karthibaraniofficial-wq',
-    featured: false
+    featured: true
   },
   {
     id: 'roadmemory',
@@ -175,7 +175,7 @@ export const PROJECTS: Project[] = [
     ],
     tags: ['Next.js 14', 'React-Leaflet', 'Recharts', 'Supabase SSR', 'TypeScript', 'CV'],
     repoUrl: 'https://github.com/karthibaraniofficial-wq/ROADMEMORYAI',
-    featured: false
+    featured: true
   },
   {
     id: 'xauralys',
@@ -228,6 +228,84 @@ export const PROJECTS: Project[] = [
     ],
     tags: ['Godot 4', 'GDScript', 'Python Generators', 'WebAssembly', 'Procedural Graphics'],
     repoUrl: 'https://github.com/karthibaraniofficial-wq/THE_LOST_CORE',
+    featured: false
+  },
+  {
+    id: 'upcycle-ai',
+    sysId: 'SYS_09',
+    title: 'UPCYCLE AI (UPCYCLEAIV1)',
+    tagline: 'Computer Vision Waste Classification & Circular Economy Engine',
+    category: 'Computer Vision & Products',
+    status: 'Active Build • Sustainability',
+    statusType: 'active',
+    description:
+      'Computer vision classification platform analyzing discarded materials (textiles, polymers, electronics) and generating automated lifecycle upcycling pathways and circular manufacturing recommendations.',
+    architectureHighlights: [
+      'Multi-class material classification utilizing custom convolutional vision backbones',
+      'Automated compositional breakdown and textile scrap degradation scoring',
+      'Circular manufacturing recommendation engine calculating CO2 offset metrics',
+      'High-throughput visual asset pipeline with real-time video stream ingestion'
+    ],
+    metrics: [
+      { label: 'Classification Accuracy', value: '93.2% mAP' },
+      { label: 'Inference Speed', value: '38ms / frame' },
+      { label: 'Material Classes', value: '18 Detected' },
+      { label: 'Domain', value: 'Sustainability' }
+    ],
+    tags: ['Computer Vision', 'PyTorch', 'OpenCV', 'FastAPI', 'React', 'Circular Economy'],
+    repoUrl: 'https://github.com/karthibaraniofficial-wq/UPCYCLEAIV1',
+    featured: true
+  },
+  {
+    id: 'gemini-clone',
+    sysId: 'SYS_10',
+    title: 'GEMINI CLONE (GEMINICLONE1)',
+    tagline: 'High-Fidelity Multimodal Generative Studio & Streaming Interface',
+    category: 'AI / Autonomous Agents',
+    status: 'Active Build • Generative UI',
+    statusType: 'active',
+    description:
+      'High-fidelity full-stack generative AI workspace inspired by Google Gemini. Supports full-duplex token streaming, Markdown code block rendering with syntax highlighting, multimodal image attachments, and customizable system prompt presets.',
+    architectureHighlights: [
+      'Server-Sent Events (SSE) and WebSocket full-duplex stream parsing',
+      'Client-side token buffering with markdown AST syntax highlighting',
+      'Context window memory management and persistent conversational history',
+      'Responsive dark-mode UI with fluid message transitions'
+    ],
+    metrics: [
+      { label: 'Token Stream Latency', value: '< 25ms TTFT' },
+      { label: 'Syntax Highlighting', value: 'Prism / AST' },
+      { label: 'Attachments', value: 'Vision / Image' },
+      { label: 'State', value: 'Reactive Zustand' }
+    ],
+    tags: ['TypeScript', 'React 18', 'Tailwind CSS', 'Google Gemini API', 'Streaming SSE'],
+    repoUrl: 'https://github.com/karthibaraniofficial-wq/GEMINICLONE1',
+    featured: false
+  },
+  {
+    id: 'nike-ai-studio',
+    sysId: 'SYS_11',
+    title: 'NIKE AI STUDIO',
+    tagline: 'Interactive 3D Generative Product Experience & Spatial Customizer',
+    category: 'Computer Vision & Products',
+    status: 'Interactive Experience',
+    statusType: 'research',
+    description:
+      'Next-generation 3D footwear customization platform. Integrates interactive WebGL mesh rendering, dynamic texture blending, and AI-driven aesthetic colorway generation.',
+    architectureHighlights: [
+      'Interactive 3D WebGL asset viewer with orbit controls and dynamic studio lighting',
+      'Real-time PBR material shader customization (roughness, metalness, normal maps)',
+      'Algorithmic color palette recommendation matching seasonal trends',
+      'Smooth responsive viewport optimized for mobile and desktop 60 FPS performance'
+    ],
+    metrics: [
+      { label: 'Rendering Frame Rate', value: '60 FPS WebGL' },
+      { label: 'Asset Format', value: 'glTF / GLB 2.0' },
+      { label: 'Material Engine', value: 'PBR Shaders' },
+      { label: 'Interactivity', value: '360° Orbit' }
+    ],
+    tags: ['Three.js', 'WebGL', 'PBR Shaders', 'React Three Fiber', 'Tailwind CSS', 'TypeScript'],
+    repoUrl: 'https://github.com/karthibaraniofficial-wq/NIKE',
     featured: false
   }
 ];

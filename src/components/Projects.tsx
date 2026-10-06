@@ -10,7 +10,7 @@ interface ProjectsProps {
 export const Projects: React.FC<ProjectsProps> = ({ onPlayClick }) => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
 
-  const categories = ['All', 'AI / Autonomous Agents', 'Geospatial & 3D', 'Systems & Tools'];
+  const categories = ['All', 'AI / Autonomous Agents', 'Geospatial & 3D', 'Systems & Tools', 'Computer Vision & Products'];
 
   const filteredProjects = useMemo(() => {
     if (activeCategory === 'All') return PROJECTS;
