@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 48" width="100%" height="100%">
+  <defs>
+    <style>
+      .status-box { fill: #0a0e1a; stroke: #1e293b; stroke-width: 1.2; rx: 8px; }
+      .st-text { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; fill: #cbd5e1; font-weight: 600; letter-spacing: 1px; }
+      .st-label { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; fill: #64748b; }
+      .p-dot { animation: pDot 2s infinite; }
+      @keyframes pDot { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+
+      @media (prefers-color-scheme: light) {
+        .status-box { fill: #f8fafc; stroke: #cbd5e1; }
+        .st-text { fill: #0f172a; }
+        .st-label { fill: #64748b; }
+      }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="916" height="44" class="status-box" />
+
+  <!-- Item 1 -->
+  <g transform="translate(24, 28)">
+    <circle cx="0" cy="-4" r="3.5" fill="#10b981" class="p-dot" />
+    <text x="12" y="0" class="st-text">AI SYSTEMS : <tspan fill="#10b981">OPERATIONAL</tspan></text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="230" y1="12" x2="230" y2="36" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Item 2 -->
+  <g transform="translate(254, 28)">
+    <circle cx="0" cy="-4" r="3.5" fill="#38bdf8" class="p-dot" />
+    <text x="12" y="0" class="st-text">EARTH TWIN : <tspan fill="#38bdf8">LIVE 60 FPS</tspan></text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="450" y1="12" x2="450" y2="36" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Item 3 -->
+  <g transform="translate(474, 28)">
+    <circle cx="0" cy="-4" r="3.5" fill="#818cf8" class="p-dot" />
+    <text x="12" y="0" class="st-text">SIH 2026 : <tspan fill="#818cf8">TEAM TARGARYEN</tspan></text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="680" y1="12" x2="680" y2="36" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Item 4 -->
+  <g transform="translate(704, 28)">
+    <circle cx="0" cy="-4" r="3.5" fill="#34d399" class="p-dot" />
+    <text x="12" y="0" class="st-text">CODEBASE : <tspan fill="#34d399">VERIFIED ZERO-FLUFF</tspan></text>
+  </g>
+</svg>

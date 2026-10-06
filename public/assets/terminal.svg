@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 270" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBgDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d16" />
+      <stop offset="100%" stop-color="#05070c" />
+    </linearGradient>
+    <linearGradient id="termBgLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+
+    <style>
+      .term-frame { fill: url(#termBgDark); stroke: #1e293b; stroke-width: 1.5; rx: 10px; }
+      .term-bar { fill: #0f172a; stroke: #1e293b; stroke-width: 1; }
+      .term-title { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #94a3b8; }
+      .t-prompt { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; fill: #38bdf8; font-weight: 700; }
+      .t-cmd { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; fill: #f8fafc; font-weight: 600; }
+      .t-out { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #94a3b8; }
+      .t-out-highlight { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #34d399; font-weight: 600; }
+      .t-out-purple { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #a78bfa; }
+      .t-cursor { animation: blink 1s step-end infinite; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+      @media (prefers-color-scheme: light) {
+        .term-frame { fill: url(#termBgLight); stroke: #cbd5e1; }
+        .term-bar { fill: #e2e8f0; stroke: #cbd5e1; }
+        .term-title { fill: #475569; }
+        .t-prompt { fill: #0284c7; }
+        .t-cmd { fill: #0f172a; }
+        .t-out { fill: #475569; }
+        .t-out-highlight { fill: #059669; }
+        .t-out-purple { fill: #6366f1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Frame -->
+  <rect x="5" y="5" width="910" height="260" class="term-frame" />
+
+  <!-- Window Header Bar -->
+  <rect x="6" y="6" width="908" height="32" class="term-bar" rx="9" />
+  
+  <circle cx="26" cy="22" r="4.5" fill="#ef4444" opacity="0.85" />
+  <circle cx="42" cy="22" r="4.5" fill="#f59e0b" opacity="0.85" />
+  <circle cx="58" cy="22" r="4.5" fill="#10b981" opacity="0.85" />
+
+  <text x="80" y="26" class="term-title">karthi@sentinel-core: ~/workspace/active-systems</text>
+  <text x="730" y="26" font-family="ui-monospace, monospace" font-size="9.5" fill="#64748b">SYS_ID: KARTHI-AI · 2026</text>
+
+  <!-- Terminal Session Content -->
+  <g transform="translate(30, 62)">
+    <!-- Command 1 -->
+    <text x="0" y="0" class="t-prompt">karthi@sentinel-core:~$</text>
+    <text x="180" y="0" class="t-cmd">whoami</text>
+    <text x="0" y="18" class="t-out">↳ karthi // AI / ML Developer &amp; Planetary Intelligence Architect</text>
+
+    <!-- Command 2 -->
+    <g transform="translate(0, 42)">
+      <text x="0" y="0" class="t-prompt">karthi@sentinel-core:~$</text>
+      <text x="180" y="0" class="t-cmd">cat active_directives.json</text>
+      <text x="0" y="18" class="t-out">↳ <tspan class="t-out-purple">[01. MULTIMODAL_AI]</tspan> Gemini 2.0 Live voice pipeline + Vision-Language Grounding</text>
+      <text x="0" y="34" class="t-out">↳ <tspan class="t-out-highlight">[02. DIGITAL_TWIN]</tspan> Three.js photorealistic Earth globe with biophysical simulation</text>
+      <text x="0" y="50" class="t-out">↳ <tspan class="t-out-purple">[03. AGENT_FABRIC]</tspan> 6-agent autonomous civic &amp; remote-sensing dispatch DAGs</text>
+    </g>
+
+    <!-- Command 3 -->
+    <g transform="translate(0, 114)">
+      <text x="0" y="0" class="t-prompt">karthi@sentinel-core:~$</text>
+      <text x="180" y="0" class="t-cmd">git status --short</text>
+      <text x="0" y="18" class="t-out-highlight">M  earthmind.vercel.app      [PRODUCTION DEPLOYED // SCIENCE EXPO 2026]</text>
+      <text x="0" y="34" class="t-out">M  civilai-mu.vercel.app     [PRODUCTION STAGE // 6-AGENT DISPATCH]</text>
+      <text x="0" y="50" class="t-out">M  linuxpilot.vercel.app     [STAGE 1 SAAS // NATURAL-LANGUAGE LINUX OPS]</text>
+    </g>
+
+    <!-- Command 4 & Cursor -->
+    <g transform="translate(0, 186)">
+      <text x="0" y="0" class="t-prompt">karthi@sentinel-core:~$</text>
+      <text x="180" y="0" class="t-cmd">build --optimize --deploy</text>
+      <rect x="365" y="-11" width="8" height="14" fill="#38bdf8" class="t-cursor" />
+    </g>
+  </g>
+</svg>

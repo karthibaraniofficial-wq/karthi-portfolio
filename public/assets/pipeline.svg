@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pipeBgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b14" />
+      <stop offset="100%" stop-color="#0e1424" />
+    </linearGradient>
+    <linearGradient id="pipeBgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <marker id="pArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+
+    <style>
+      .pipe-bg { fill: url(#pipeBgDark); stroke: #1e293b; stroke-width: 1.5; rx: 10px; }
+      .p-node { fill: #0b0f19; stroke: #1e293b; stroke-width: 1; rx: 6px; }
+      .p-title { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; fill: #ffffff; letter-spacing: 1px; }
+      .p-sub { font-family: ui-monospace, monospace; font-size: 8px; fill: #94a3b8; }
+      .p-step { font-family: ui-monospace, monospace; font-size: 8px; fill: #38bdf8; font-weight: 700; }
+      .p-conn { stroke: #38bdf8; stroke-width: 1.2; stroke-dasharray: 2 2; }
+
+      @media (prefers-color-scheme: light) {
+        .pipe-bg { fill: url(#pipeBgLight); stroke: #cbd5e1; }
+        .p-node { fill: #ffffff; stroke: #cbd5e1; }
+        .p-title { fill: #0f172a; }
+        .p-sub { fill: #475569; }
+        .p-step { fill: #0284c7; }
+        .p-conn { stroke: #0284c7; }
+      }
+    </style>
+  </defs>
+
+  <rect x="5" y="5" width="910" height="100" class="pipe-bg" />
+
+  <!-- Node 1: BUILD -->
+  <g transform="translate(20, 20)">
+    <rect x="0" y="0" width="120" height="70" class="p-node" />
+    <g transform="translate(10, 18)">
+      <text x="0" y="0" class="p-step">PHASE 01</text>
+      <text x="0" y="16" class="p-title">BUILD</text>
+      <text x="0" y="32" class="p-sub">Typed Contracts</text>
+    </g>
+  </g>
+  <line x1="140" y1="55" x2="164" y2="55" class="p-conn" marker-end="url(#pArrow)" />
+
+  <!-- Node 2: TEST -->
+  <g transform="translate(170, 20)">
+    <rect x="0" y="0" width="120" height="70" class="p-node" />
+    <g transform="translate(10, 18)">
+      <text x="0" y="0" class="p-step">PHASE 02</text>
+      <text x="0" y="16" class="p-title">TEST</text>
+      <text x="0" y="32" class="p-sub">Physical Bounds</text>
+    </g>
+  </g>
+  <line x1="290" y1="55" x2="314" y2="55" class="p-conn" marker-end="url(#pArrow)" />
+
+  <!-- Node 3: BREAK -->
+  <g transform="translate(320, 20)">
+    <rect x="0" y="0" width="120" height="70" class="p-node" />
+    <g transform="translate(10, 18)">
+      <text x="0" y="0" class="p-step">PHASE 03</text>
+      <text x="0" y="16" class="p-title">BREAK</text>
+      <text x="0" y="32" class="p-sub">Chaos Ingestion</text>
+    </g>
+  </g>
+  <line x1="440" y1="55" x2="464" y2="55" class="p-conn" marker-end="url(#pArrow)" />
+
+  <!-- Node 4: LEARN -->
+  <g transform="translate(470, 20)">
+    <rect x="0" y="0" width="120" height="70" class="p-node" />
+    <g transform="translate(10, 18)">
+      <text x="0" y="0" class="p-step">PHASE 04</text>
+      <text x="0" y="16" class="p-title">LEARN</text>
+      <text x="0" y="32" class="p-sub">Trace Telemetry</text>
+    </g>
+  </g>
+  <line x1="590" y1="55" x2="614" y2="55" class="p-conn" marker-end="url(#pArrow)" />
+
+  <!-- Node 5: IMPROVE -->
+  <g transform="translate(620, 20)">
+    <rect x="0" y="0" width="120" height="70" class="p-node" />
+    <g transform="translate(10, 18)">
+      <text x="0" y="0" class="p-step">PHASE 05</text>
+      <text x="0" y="16" class="p-title">IMPROVE</text>
+      <text x="0" y="32" class="p-sub">Deterministic Fix</text>
+    </g>
+  </g>
+  <line x1="740" y1="55" x2="764" y2="55" class="p-conn" marker-end="url(#pArrow)" />
+
+  <!-- Node 6: SHIP -->
+  <g transform="translate(770, 20)">
+    <rect x="0" y="0" width="125" height="70" class="p-node" stroke="#10b981" />
+    <g transform="translate(10, 18)">
+      <text x="0" y="0" class="p-step" fill="#10b981">PHASE 06</text>
+      <text x="0" y="16" class="p-title">SHIP</text>
+      <text x="0" y="32" class="p-sub" fill="#10b981">Production Deploy</text>
+    </g>
+  </g>
+</svg>

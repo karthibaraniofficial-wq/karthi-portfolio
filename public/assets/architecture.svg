@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 290" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12" />
+      <stop offset="50%" stop-color="#0a1020" />
+      <stop offset="100%" stop-color="#060910" />
+    </linearGradient>
+    <linearGradient id="archBgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+
+    <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#818cf8" />
+    </marker>
+
+    <style>
+      .arch-bg { fill: url(#archBgDark); stroke: #1e293b; stroke-width: 1.5; rx: 12px; }
+      .arch-header { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #38bdf8; font-weight: 700; letter-spacing: 1.5px; }
+      .box-card { fill: #0b0f19; stroke: #1e293b; stroke-width: 1.2; rx: 8px; }
+      .box-highlight { fill: #0d1527; stroke: #38bdf8; stroke-width: 1.5; rx: 8px; }
+      .text-step { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; fill: #38bdf8; font-weight: 700; letter-spacing: 1px; }
+      .text-node-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .text-node-desc { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; fill: #94a3b8; }
+      .pipe-line { stroke: #38bdf8; stroke-width: 1.5; stroke-dasharray: 4 3; }
+      .sub-pill { fill: #1e293b; rx: 4px; }
+      .sub-text { font-family: ui-monospace, monospace; font-size: 8px; fill: #cbd5e1; }
+
+      @media (prefers-color-scheme: light) {
+        .arch-bg { fill: url(#archBgLight); stroke: #cbd5e1; }
+        .arch-header { fill: #0284c7; }
+        .box-card { fill: #ffffff; stroke: #cbd5e1; }
+        .box-highlight { fill: #f0f9ff; stroke: #0284c7; }
+        .text-step { fill: #0284c7; }
+        .text-node-title { fill: #0f172a; }
+        .text-node-desc { fill: #475569; }
+        .pipe-line { stroke: #0284c7; }
+        .sub-pill { fill: #e2e8f0; }
+        .sub-text { fill: #1e293b; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="5" y="5" width="910" height="280" class="arch-bg" />
+
+  <!-- Diagram Title Header -->
+  <g transform="translate(30, 30)">
+    <circle cx="0" cy="0" r="4" fill="#38bdf8" />
+    <text x="14" y="4" class="arch-header">SYSTEM ARCHITECTURE // MULTIMODAL INTELLIGENCE &amp; AGENT EXECUTION DAG</text>
+    <text x="690" y="4" font-family="ui-monospace, monospace" font-size="9.5" fill="#64748b">PROTOCOL: EVENT-DRIVEN / ZERO-SILENT-FAIL</text>
+  </g>
+
+  <!-- Node 01: Ingestion & Input Fabric -->
+  <g transform="translate(25, 60)">
+    <rect x="0" y="0" width="155" height="190" class="box-card" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="text-step">STAGE 01</text>
+      <text x="0" y="20" class="text-node-title">INGESTION</text>
+      <text x="0" y="36" class="text-node-desc">Multispectral &amp; Stream</text>
+      
+      <g transform="translate(0, 52)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Optical EO (Sentinel-2)</text>
+      </g>
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">SAR Radar (NISAR/S-1)</text>
+      </g>
+      <g transform="translate(0, 108)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Real-time Audio / Telemetry</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connector 1 -> 2 -->
+  <line x1="180" y1="155" x2="202" y2="155" class="pipe-line" marker-end="url(#arrow)" />
+
+  <!-- Node 02: Multimodal Perception Core -->
+  <g transform="translate(205, 60)">
+    <rect x="0" y="0" width="155" height="190" class="box-highlight" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="text-step">STAGE 02</text>
+      <text x="0" y="20" class="text-node-title">PERCEPTION</text>
+      <text x="0" y="36" class="text-node-desc">Multimodal VLM Engine</text>
+
+      <g transform="translate(0, 52)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Gemini 2.0 Live API</text>
+      </g>
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Vision-Language Grounding</text>
+      </g>
+      <g transform="translate(0, 108)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Spectral Differential Ops</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connector 2 -> 3 -->
+  <line x1="360" y1="155" x2="382" y2="155" class="pipe-line" marker-end="url(#arrow)" />
+
+  <!-- Node 03: Agent Orchestration Engine -->
+  <g transform="translate(385, 60)">
+    <rect x="0" y="0" width="155" height="190" class="box-card" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="text-step">STAGE 03</text>
+      <text x="0" y="20" class="text-node-title">AGENT DAG</text>
+      <text x="0" y="36" class="text-node-desc">Autonomous Workflow</text>
+
+      <g transform="translate(0, 52)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Dynamic SLA &amp; Priority</text>
+      </g>
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Automated Department Routing</text>
+      </g>
+      <g transform="translate(0, 108)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Simulation &amp; What-If Engine</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connector 3 -> 4 -->
+  <line x1="540" y1="155" x2="562" y2="155" class="pipe-line" marker-end="url(#arrowPurple)" />
+
+  <!-- Node 04: Validation & Physics Verification -->
+  <g transform="translate(565, 60)">
+    <rect x="0" y="0" width="155" height="190" class="box-card" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="text-step">STAGE 04</text>
+      <text x="0" y="20" class="text-node-title">VALIDATION</text>
+      <text x="0" y="36" class="text-node-desc">Integrity &amp; Observability</text>
+
+      <g transform="translate(0, 52)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Physical &amp; Spatial Bounds</text>
+      </g>
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Deterministic Thresholds</text>
+      </g>
+      <g transform="translate(0, 108)">
+        <rect x="0" y="0" width="127" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Immutable Audit Ledger</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connector 4 -> 5 -->
+  <line x1="720" y1="155" x2="742" y2="155" class="pipe-line" marker-end="url(#arrow)" />
+
+  <!-- Node 05: Client & 3D Interactive UI -->
+  <g transform="translate(745, 60)">
+    <rect x="0" y="0" width="150" height="190" class="box-card" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="text-step">STAGE 05</text>
+      <text x="0" y="20" class="text-node-title">DECISION / UI</text>
+      <text x="0" y="36" class="text-node-desc">Real-time Visualization</text>
+
+      <g transform="translate(0, 52)">
+        <rect x="0" y="0" width="122" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Three.js 3D Earth (60 FPS)</text>
+      </g>
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="122" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">MapLibre GL Vector Layers</text>
+      </g>
+      <g transform="translate(0, 108)">
+        <rect x="0" y="0" width="122" height="22" class="sub-pill" />
+        <text x="6" y="14" class="sub-text">Operational Command HUD</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Data Bus Flow Arrow -->
+  <path d="M 80 262 L 840 262" stroke="#1e293b" stroke-width="1.5" />
+  <circle cx="80" cy="262" r="3" fill="#38bdf8" />
+  <circle cx="840" cy="262" r="3" fill="#34d399" />
+  <text x="460" y="265" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8.5" fill="#64748b" letter-spacing="1px">REAL-TIME DATA FABRIC // LATENCY &lt; 50ms // PROVENANCE TRACEABLE</text>
+</svg>

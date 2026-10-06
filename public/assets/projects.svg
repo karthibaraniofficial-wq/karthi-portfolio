@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="projBgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b14" />
+      <stop offset="100%" stop-color="#0e1424" />
+    </linearGradient>
+    <linearGradient id="projBgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+
+    <style>
+      .proj-bg { fill: url(#projBgDark); stroke: #1e293b; stroke-width: 1.5; rx: 12px; }
+      .p-card { fill: #0b0f19; stroke: #1e293b; stroke-width: 1; rx: 8px; }
+      .text-title { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #38bdf8; font-weight: 700; letter-spacing: 1.5px; }
+      .text-num { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 18px; fill: #ffffff; font-weight: 800; }
+      .text-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; fill: #94a3b8; font-weight: 600; }
+      .text-detail { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; fill: #64748b; }
+      .pulse-dot { animation: pDot 2s infinite; }
+      @keyframes pDot { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+
+      @media (prefers-color-scheme: light) {
+        .proj-bg { fill: url(#projBgLight); stroke: #cbd5e1; }
+        .p-card { fill: #ffffff; stroke: #cbd5e1; }
+        .text-title { fill: #0284c7; }
+        .text-num { fill: #0f172a; }
+        .text-label { fill: #475569; }
+        .text-detail { fill: #64748b; }
+      }
+    </style>
+  </defs>
+
+  <rect x="5" y="5" width="910" height="130" class="proj-bg" />
+
+  <g transform="translate(30, 28)">
+    <circle cx="0" cy="0" r="4" fill="#10b981" class="pulse-dot" />
+    <text x="14" y="4" class="text-title">ENGINEERING REGISTRY // PRODUCTION SYSTEMS &amp; SCIENTIFIC INITIATIVES</text>
+    <text x="730" y="4" font-family="ui-monospace, monospace" font-size="9" fill="#64748b">STATUS: 100% VERIFIED</text>
+  </g>
+
+  <!-- 3 Summary Metrics -->
+  <g transform="translate(30, 48)">
+    <!-- Box 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="270" height="68" class="p-card" />
+      <g transform="translate(16, 24)">
+        <text x="0" y="0" class="text-num">03 LIVE</text>
+        <text x="80" y="-3" class="text-label">Production Deployments</text>
+        <text x="0" y="24" class="text-detail">EARTHMIND · CIVICFLOW · LINUXPILOT</text>
+      </g>
+    </g>
+
+    <!-- Box 2 -->
+    <g transform="translate(295, 0)">
+      <rect x="0" y="0" width="270" height="68" class="p-card" />
+      <g transform="translate(16, 24)">
+        <text x="0" y="0" class="text-num">06 AGENTS</text>
+        <text x="100" y="-3" class="text-label">Autonomous Pipelines</text>
+        <text x="0" y="24" class="text-detail">Vision VLM · Routing · SLA · Physics Check</text>
+      </g>
+    </g>
+
+    <!-- Box 3 -->
+    <g transform="translate(590, 0)">
+      <rect x="0" y="0" width="270" height="68" class="p-card" />
+      <g transform="translate(16, 24)">
+        <text x="0" y="0" class="text-num">60 FPS</text>
+        <text x="75" y="-3" class="text-label">Real-time 3D Graphics</text>
+        <text x="0" y="24" class="text-detail">Three.js Earth Twin · MapLibre · Godot 4</text>
+      </g>
+    </g>
+  </g>
+</svg>

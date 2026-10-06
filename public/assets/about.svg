@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 290" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aboutBgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b12" />
+      <stop offset="60%" stop-color="#0d1322" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
+    <linearGradient id="aboutBgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <style>
+      .card-bg { fill: url(#aboutBgDark); stroke: #1e293b; stroke-width: 1.5; rx: 12px; }
+      .header-bar { fill: #0d1527; stroke: #1e293b; stroke-width: 1; }
+      .inner-box { fill: #0b0f19; stroke: #1e293b; stroke-width: 1; rx: 8px; }
+      .tag-bg { fill: #172554; stroke: #38bdf8; stroke-opacity: 0.4; stroke-width: 1; rx: 4px; }
+      .text-title { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #38bdf8; font-weight: 700; letter-spacing: 1.5px; }
+      .text-name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 20px; font-weight: 700; fill: #ffffff; letter-spacing: 0.5px; }
+      .text-sub { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; fill: #818cf8; font-weight: 600; }
+      .text-body { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #94a3b8; }
+      .text-val { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #f1f5f9; font-weight: 600; }
+      .text-meta { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9.5px; fill: #64748b; letter-spacing: 0.5px; }
+      .tree-branch { stroke: #38bdf8; stroke-width: 1; stroke-opacity: 0.5; fill: none; }
+      .div-line { stroke: #1e293b; stroke-width: 1; }
+      
+      @media (prefers-color-scheme: light) {
+        .card-bg { fill: url(#aboutBgLight); stroke: #cbd5e1; }
+        .header-bar { fill: #e2e8f0; stroke: #cbd5e1; }
+        .inner-box { fill: #ffffff; stroke: #cbd5e1; }
+        .tag-bg { fill: #e0f2fe; stroke: #0284c7; stroke-opacity: 0.5; }
+        .text-title { fill: #0284c7; }
+        .text-name { fill: #0f172a; }
+        .text-sub { fill: #4f46e5; }
+        .text-body { fill: #475569; }
+        .text-val { fill: #0f172a; }
+        .text-meta { fill: #64748b; }
+        .tree-branch { stroke: #0284c7; stroke-opacity: 0.7; }
+        .div-line { stroke: #e2e8f0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect x="5" y="5" width="910" height="280" class="card-bg" />
+
+  <!-- Top Terminal Header Bar -->
+  <rect x="6" y="6" width="908" height="34" class="header-bar" rx="11" />
+  <!-- Terminal window control dots -->
+  <circle cx="26" cy="23" r="4.5" fill="#ef4444" opacity="0.8" />
+  <circle cx="42" cy="23" r="4.5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="58" cy="23" r="4.5" fill="#10b981" opacity="0.8" />
+  
+  <text x="82" y="26" class="text-title">DEVELOPER IDENTITY CARD // SPEC_ID: KARTHI.DEV // PROTOCOL: v2.6</text>
+  <text x="750" y="26" class="text-meta">HASH: 269653815 // VERIFIED</text>
+
+  <!-- Left Column: Operator Identity Profile -->
+  <g transform="translate(25, 55)">
+    <!-- Identity Badge Frame -->
+    <rect x="0" y="0" width="425" height="215" class="inner-box" />
+
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" class="text-meta">OPERATOR // CLASS: FULL-STACK AI BUILDER</text>
+      <text x="0" y="24" class="text-name">KARTHI (Karthibarani)</text>
+      <text x="0" y="44" class="text-sub">AI / ML Engineer · Planetary Systems Architect</text>
+      
+      <!-- Divider line -->
+      <line x1="0" y1="56" x2="385" y2="56" class="div-line" />
+
+      <!-- Mission Statement / Brand -->
+      <text x="0" y="74" class="text-body">"Turning experimental neural models and geospatial streams</text>
+      <text x="0" y="90" class="text-body">into production-grade, observable software systems."</text>
+
+      <!-- Tree Focus Hierarchy -->
+      <g transform="translate(0, 114)">
+        <text x="0" y="0" font-family="ui-monospace, monospace" font-size="10.5" fill="#38bdf8" font-weight="700">ACTIVE DISCIPLINES</text>
+        
+        <path d="M 6 12 L 6 68 M 6 22 L 20 22 M 6 42 L 20 42 M 6 62 L 20 62" class="tree-branch" />
+        
+        <text x="26" y="26" class="text-body">├─ <tspan class="text-val">Multimodal AI</tspan> (Gemini 2.0 Live, VLMs, Vision Auditing)</text>
+        <text x="26" y="46" class="text-body">├─ <tspan class="text-val">3D Geospatial Twins</tspan> (Three.js, MapLibre, Optical+SAR)</text>
+        <text x="26" y="66" class="text-body">└─ <tspan class="text-val">Autonomous Agents</tspan> (Deterministic DAGs, SLA Engines)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Column: Engineering Matrix & Verified Track Record -->
+  <g transform="translate(470, 55)">
+    <rect x="0" y="0" width="425" height="215" class="inner-box" />
+
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" class="text-meta">ENGINEERING TELEMETRY &amp; SPECIALIZATIONS</text>
+      
+      <!-- Section 1: Flagship -->
+      <g transform="translate(0, 20)">
+        <text x="0" y="10" class="text-body">FLAGSHIP:</text>
+        <rect x="80" y="-3" width="100" height="19" class="tag-bg" />
+        <text x="88" y="10" font-family="ui-monospace, monospace" font-size="10" fill="#38bdf8" font-weight="700">EARTHMIND</text>
+        <text x="190" y="10" class="text-meta">Science Expo 2026 Edition</text>
+      </g>
+
+      <!-- Section 2: Hackathon -->
+      <g transform="translate(0, 48)">
+        <text x="0" y="10" class="text-body">COMPETITION:</text>
+        <text x="100" y="10" class="text-val">Smart India Hackathon 2026</text>
+        <text x="290" y="10" class="text-meta">Team Targaryen</text>
+      </g>
+
+      <!-- Section 3: Engineering Capabilities -->
+      <g transform="translate(0, 76)">
+        <text x="0" y="10" class="text-body">SYSTEM DOMAINS:</text>
+        <text x="120" y="10" class="text-val">Planetary Intelligence · Civic AI · Linux Ops</text>
+      </g>
+
+      <!-- Section 4: Real-time Data Specs -->
+      <g transform="translate(0, 104)">
+        <text x="0" y="10" class="text-body">TECH FABRIC:</text>
+        <text x="96" y="10" class="text-val">TypeScript · Python · Three.js · FastAPI · Godot 4</text>
+      </g>
+
+      <!-- Divider line -->
+      <line x1="0" y1="124" x2="385" y2="124" class="div-line" />
+
+      <!-- Status Indicator Pills -->
+      <g transform="translate(0, 144)">
+        <!-- Pill 1 -->
+        <rect x="0" y="0" width="118" height="26" rx="5" fill="#030712" stroke="#1e293b" stroke-width="1" />
+        <circle cx="12" cy="13" r="3" fill="#10b981" />
+        <text x="22" y="17" font-family="ui-monospace, monospace" font-size="9.5" fill="#94a3b8">VERIFIED REPOS: 11</text>
+
+        <!-- Pill 2 -->
+        <rect x="126" y="0" width="128" height="26" rx="5" fill="#030712" stroke="#1e293b" stroke-width="1" />
+        <circle cx="138" cy="13" r="3" fill="#38bdf8" />
+        <text x="148" y="17" font-family="ui-monospace, monospace" font-size="9.5" fill="#94a3b8">DEPLOYED LIVE: 3</text>
+
+        <!-- Pill 3 -->
+        <rect x="262" y="0" width="123" height="26" rx="5" fill="#030712" stroke="#1e293b" stroke-width="1" />
+        <circle cx="274" cy="13" r="3" fill="#818cf8" />
+        <text x="284" y="17" font-family="ui-monospace, monospace" font-size="9.5" fill="#94a3b8">AUDIT: 100% CLEAN</text>
+      </g>
+    </g>
+  </g>
+</svg>

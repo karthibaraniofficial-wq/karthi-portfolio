@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/hero.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Karthi — AI / ML Developer • Full-Stack Builder • Product Creator</title>
+    <meta name="title" content="Karthi — AI / ML Developer • Full-Stack Builder • Product Creator" />
+    <meta name="description" content="Personal portfolio of Karthi: Engineering intelligent systems, autonomous agent DAGs, geospatial remote-sensing intelligence, and full-stack digital twins." />
+    <meta name="keywords" content="Karthi, AI Engineer, Machine Learning, Gemini 2.0 Live, Three.js, Geospatial AI, Autonomous Agents, Full-Stack Developer, EarthMind, SatQuery AI" />
+    <meta name="author" content="Karthi (karthibaraniofficial-wq)" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://earthmind.vercel.app" />
+    <meta property="og:title" content="Karthi — AI / ML Developer • Full-Stack Builder" />
+    <meta property="og:description" content="Building intelligent systems that turn ambitious ideas into production products." />
+    <meta property="og:image" content="/assets/hero.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Karthi — AI / ML Developer • Full-Stack Builder" />
+    <meta property="twitter:description" content="Building intelligent systems that turn ambitious ideas into production products." />
+    <meta property="twitter:image" content="/assets/hero.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <script>
+      // Prevent theme flicker
+      (function() {
+        const theme = localStorage.getItem('karthi_portfolio_theme') || 'dark';
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+        } else {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.add('light');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-bg text-text-primary antialiased selection:bg-cyan-500/20 selection:text-cyan-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

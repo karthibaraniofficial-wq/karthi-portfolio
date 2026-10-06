@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fArchDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12" />
+      <stop offset="100%" stop-color="#0a1020" />
+    </linearGradient>
+    <linearGradient id="fArchLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+
+    <marker id="fArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+
+    <style>
+      .f-bg { fill: url(#fArchDark); stroke: #1e293b; stroke-width: 1.5; rx: 10px; }
+      .f-node { fill: #0b0f19; stroke: #1e293b; stroke-width: 1.2; rx: 8px; }
+      .f-node-active { fill: #0d172e; stroke: #38bdf8; stroke-width: 1.5; rx: 8px; }
+      .f-step { font-family: ui-monospace, monospace; font-size: 8.5px; fill: #38bdf8; font-weight: 700; letter-spacing: 1px; }
+      .f-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; font-weight: 700; fill: #ffffff; }
+      .f-sub { font-family: ui-monospace, monospace; font-size: 8px; fill: #94a3b8; }
+      .f-pipe { stroke: #38bdf8; stroke-width: 1.2; stroke-dasharray: 3 3; }
+
+      @media (prefers-color-scheme: light) {
+        .f-bg { fill: url(#fArchLight); stroke: #cbd5e1; }
+        .f-node { fill: #ffffff; stroke: #cbd5e1; }
+        .f-node-active { fill: #f0f9ff; stroke: #0284c7; }
+        .f-step { fill: #0284c7; }
+        .f-title { fill: #0f172a; }
+        .f-sub { fill: #475569; }
+        .f-pipe { stroke: #0284c7; }
+      }
+    </style>
+  </defs>
+
+  <rect x="5" y="5" width="910" height="170" class="f-bg" />
+
+  <!-- Flow Nodes -->
+  <!-- 01. Observation Data -->
+  <g transform="translate(25, 25)">
+    <rect x="0" y="0" width="155" height="130" class="f-node" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="f-step">01 · DATA INGESTION</text>
+      <text x="0" y="20" class="f-title">Planetary Stream</text>
+      <text x="0" y="38" class="f-sub">Biophysical Observations</text>
+      <text x="0" y="52" class="f-sub">Atmospheric CO2 Indices</text>
+      <text x="0" y="66" class="f-sub">Geospatial Terrain Grid</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="180" y1="90" x2="202" y2="90" class="f-pipe" marker-end="url(#fArrow)" />
+
+  <!-- 02. Gemini 2.0 Live Engine -->
+  <g transform="translate(205, 25)">
+    <rect x="0" y="0" width="155" height="130" class="f-node-active" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="f-step">02 · AI LIVE ENGINE</text>
+      <text x="0" y="20" class="f-title">Gemini 2.0 Live</text>
+      <text x="0" y="38" class="f-sub">Multimodal Voice Intelligence</text>
+      <text x="0" y="52" class="f-sub">Real-time What-If Scenarios</text>
+      <text x="0" y="66" class="f-sub">Conversational Planetary Copilot</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="360" y1="90" x2="382" y2="90" class="f-pipe" marker-end="url(#fArrow)" />
+
+  <!-- 03. Biophysical Validation -->
+  <g transform="translate(385, 25)">
+    <rect x="0" y="0" width="155" height="130" class="f-node" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="f-step">03 · PHYSICS ENGINE</text>
+      <text x="0" y="20" class="f-title">Biophysical Bounding</text>
+      <text x="0" y="38" class="f-sub">Climate Balance Equations</text>
+      <text x="0" y="52" class="f-sub">Zero-Hallucination Guardrails</text>
+      <text x="0" y="66" class="f-sub">State Transition Checks</text>
+    </g>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="540" y1="90" x2="562" y2="90" class="f-pipe" marker-end="url(#fArrow)" />
+
+  <!-- 04. 3D Globe Visualizer -->
+  <g transform="translate(565, 25)">
+    <rect x="0" y="0" width="155" height="130" class="f-node" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="f-step">04 · 3D TWIN RENDER</text>
+      <text x="0" y="20" class="f-title">Three.js 60 FPS Globe</text>
+      <text x="0" y="38" class="f-sub">Atmospheric Rayleigh Scattering</text>
+      <text x="0" y="52" class="f-sub">Dynamic Cloud Formations</text>
+      <text x="0" y="66" class="f-sub">Day / Night Terminator Shader</text>
+    </g>
+  </g>
+
+  <!-- Arrow 4 -> 5 -->
+  <line x1="720" y1="90" x2="742" y2="90" class="f-pipe" marker-end="url(#fArrow)" />
+
+  <!-- 05. Operator Decision -->
+  <g transform="translate(745, 25)">
+    <rect x="0" y="0" width="150" height="130" class="f-node" />
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" class="f-step">05 · OPERATOR INTERFACE</text>
+      <text x="0" y="20" class="f-title">Human-in-the-Loop</text>
+      <text x="0" y="38" class="f-sub">Real-time Policy Simulator</text>
+      <text x="0" y="52" class="f-sub">Science Expo Demonstration</text>
+      <text x="0" y="66" class="f-sub">Live at earthmind.vercel.app</text>
+    </g>
+  </g>
+</svg>

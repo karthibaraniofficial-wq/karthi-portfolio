@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06080e" />
+      <stop offset="50%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#05070c" />
+    </linearGradient>
+    <linearGradient id="bgGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    
+    <linearGradient id="glowG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .bg-rect { fill: url(#bgGradDark); stroke: #1e293b; stroke-width: 1.5; rx: 12px; }
+      .grid-line { stroke: #1e293b; stroke-width: 0.7; stroke-opacity: 0.5; }
+      .text-title { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 34px; font-weight: 800; fill: #ffffff; letter-spacing: 2px; }
+      .text-role { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: url(#cyanPurple); letter-spacing: 2.5px; text-transform: uppercase; }
+      .text-desc { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 13px; fill: #94a3b8; }
+      .text-badge { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 10px; font-weight: 600; fill: #38bdf8; letter-spacing: 1px; }
+      .badge-bg { fill: #0f172a; stroke: #38bdf8; stroke-opacity: 0.35; stroke-width: 1; rx: 6px; }
+      .corner-mark { stroke: #38bdf8; stroke-width: 1.5; stroke-linecap: square; }
+      .wire-ring { stroke: #38bdf8; stroke-width: 1; stroke-opacity: 0.25; stroke-dasharray: 4 4; fill: none; }
+      .wire-ring-solid { stroke: #818cf8; stroke-width: 1.2; stroke-opacity: 0.3; fill: none; }
+      .conn-line { stroke: #334155; stroke-width: 1.2; stroke-dasharray: 2 3; }
+      .node-core { fill: #0f172a; stroke: #38bdf8; stroke-width: 2; }
+      .node-satellite { fill: #0f172a; stroke: #818cf8; stroke-width: 1.5; }
+      .node-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 9px; fill: #e2e8f0; font-weight: 600; }
+      .status-pulse { animation: pulse 2.5s infinite; transform-origin: center; }
+      .orbit-spin { animation: spin 40s linear infinite; transform-origin: 740px 170px; }
+
+      @keyframes pulse {
+        0% { opacity: 0.4; }
+        50% { opacity: 1; }
+        100% { opacity: 0.4; }
+      }
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      @media (prefers-color-scheme: light) {
+        .bg-rect { fill: url(#bgGradLight); stroke: #cbd5e1; }
+        .grid-line { stroke: #cbd5e1; stroke-opacity: 0.7; }
+        .text-title { fill: #0f172a; }
+        .text-desc { fill: #475569; }
+        .badge-bg { fill: #e0f2fe; stroke: #0284c7; stroke-opacity: 0.4; }
+        .text-badge { fill: #0284c7; }
+        .corner-mark { stroke: #0284c7; }
+        .wire-ring { stroke: #0284c7; stroke-opacity: 0.35; }
+        .wire-ring-solid { stroke: #6366f1; stroke-opacity: 0.4; }
+        .conn-line { stroke: #94a3b8; }
+        .node-core { fill: #ffffff; stroke: #0284c7; }
+        .node-satellite { fill: #ffffff; stroke: #6366f1; }
+        .node-text { fill: #1e293b; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect x="5" y="5" width="910" height="330" class="bg-rect" />
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <line x1="50" y1="5" x2="50" y2="335" class="grid-line" />
+  <line x1="560" y1="5" x2="560" y2="335" class="grid-line" />
+  <line x1="5" y1="55" x2="915" y2="55" class="grid-line" />
+  <line x1="5" y1="285" x2="915" y2="285" class="grid-line" />
+
+  <!-- Corner Precision Markings -->
+  <path d="M 20 28 L 20 20 L 28 20" class="corner-mark" fill="none" />
+  <path d="M 900 28 L 900 20 L 892 20" class="corner-mark" fill="none" />
+  <path d="M 20 312 L 20 320 L 28 320" class="corner-mark" fill="none" />
+  <path d="M 900 312 L 900 320 L 892 320" class="corner-mark" fill="none" />
+
+  <!-- Top Status Bar & Telemetry Badges -->
+  <g transform="translate(65, 22)">
+    <rect x="0" y="0" width="170" height="22" class="badge-bg" />
+    <circle cx="12" cy="11" r="3.5" fill="#10b981" class="status-pulse" />
+    <text x="24" y="15" class="text-badge">SYSTEM // ONLINE : NODE_26</text>
+  </g>
+
+  <g transform="translate(245, 22)">
+    <rect x="0" y="0" width="160" height="22" class="badge-bg" />
+    <text x="14" y="15" class="text-badge">LOC : IN-TN // LAT 11.0° N</text>
+  </g>
+
+  <g transform="translate(415, 22)">
+    <rect x="0" y="0" width="130" height="22" class="badge-bg" />
+    <text x="12" y="15" class="text-badge">ROLE : AI ARCHITECT</text>
+  </g>
+
+  <!-- Hero Typography Section -->
+  <g transform="translate(65, 105)">
+    <text x="0" y="0" class="text-role">PLANETARY INTELLIGENCE &amp; AUTONOMOUS SYSTEMS</text>
+    <text x="0" y="42" class="text-title">KARTHI</text>
+    
+    <g transform="translate(0, 78)">
+      <text x="0" y="0" class="text-desc">Engineering multimodal AI models, real-time 3D planetary twins,</text>
+      <text x="0" y="22" class="text-desc">and autonomous agent architectures for mission-critical operations.</text>
+    </g>
+
+    <!-- Interactive Terminal Command Pill -->
+    <g transform="translate(0, 126)">
+      <rect x="0" y="0" width="460" height="32" rx="6" fill="#030712" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#38bdf8">&gt; status</text>
+      <text x="78" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#cbd5e1">earthmind.sim --model=gemini-2.0-live --mode=60fps</text>
+      <rect x="424" y="10" width="7" height="13" fill="#38bdf8" class="status-pulse" />
+    </g>
+  </g>
+
+  <!-- Bottom Telemetry Metric Strips -->
+  <g transform="translate(65, 305)">
+    <text x="0" y="0" font-family="ui-monospace, monospace" font-size="10" fill="#64748b">CORE_STACK: THREE.JS · GEMINI-LIVE · FASTAPI · TYPESCRIPT · MAPLIBRE · GODOT</text>
+    <text x="610" y="0" font-family="ui-monospace, monospace" font-size="10" fill="#38bdf8" font-weight="600">MISSION: SIH 2026 // SCIENCE EXPO</text>
+  </g>
+
+  <!-- Right Side: AI Neural & Orbital Core HUD Visual -->
+  <g id="hudCluster" transform="translate(0, 0)">
+    <!-- Concentric Orbital Wire Rings -->
+    <circle cx="740" cy="170" r="115" class="wire-ring" />
+    <circle cx="740" cy="170" r="85" class="wire-ring-solid" />
+    <circle cx="740" cy="170" r="50" class="wire-ring" />
+    <circle cx="740" cy="170" r="130" class="wire-ring" stroke-dasharray="1 8" />
+
+    <!-- Ambient Core Glow -->
+    <circle cx="740" cy="170" r="42" fill="url(#glowG)" filter="url(#glowFilter)" />
+
+    <!-- Animated Rotating Crosshair -->
+    <g class="orbit-spin">
+      <line x1="740" y1="40" x2="740" y2="300" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.2" stroke-dasharray="4 4" />
+      <line x1="610" y1="170" x2="870" y2="170" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.2" stroke-dasharray="4 4" />
+      <!-- Orbital marker beacon -->
+      <circle cx="740" cy="55" r="3" fill="#38bdf8" />
+      <circle cx="825" cy="170" r="2.5" fill="#c084fc" />
+    </g>
+
+    <!-- Vector Data Connection Lines to Satellite Nodes -->
+    <line x1="740" y1="170" x2="630" y2="90" class="conn-line" />
+    <line x1="740" y1="170" x2="850" y2="95" class="conn-line" />
+    <line x1="740" y1="170" x2="615" y2="240" class="conn-line" />
+    <line x1="740" y1="170" x2="855" y2="235" class="conn-line" />
+    <line x1="740" y1="170" x2="740" y2="60" class="conn-line" />
+
+    <!-- Central Neural Core Node -->
+    <circle cx="740" cy="170" r="26" class="node-core" />
+    <text x="740" y="167" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#38bdf8">GEMINI</text>
+    <text x="740" y="177" text-anchor="middle" font-family="ui-monospace, monospace" font-size="7.5" fill="#94a3b8">2.0 LIVE</text>
+
+    <!-- Satellite Node 1: Three.js 3D (Top Left) -->
+    <g transform="translate(630, 90)">
+      <rect x="-42" y="-14" width="84" height="28" rx="6" class="node-satellite" />
+      <text x="0" y="4" text-anchor="middle" class="node-text">THREE.JS / 3D</text>
+    </g>
+
+    <!-- Satellite Node 2: Optical+SAR (Top Right) -->
+    <g transform="translate(850, 95)">
+      <rect x="-44" y="-14" width="88" height="28" rx="6" class="node-satellite" />
+      <text x="0" y="4" text-anchor="middle" class="node-text">OPTICAL + SAR</text>
+    </g>
+
+    <!-- Satellite Node 3: AI Agents (Bottom Left) -->
+    <g transform="translate(615, 240)">
+      <rect x="-46" y="-14" width="92" height="28" rx="6" class="node-satellite" />
+      <text x="0" y="4" text-anchor="middle" class="node-text">AI AGENT DAG</text>
+    </g>
+
+    <!-- Satellite Node 4: FastAPI / Telemetry (Bottom Right) -->
+    <g transform="translate(855, 235)">
+      <rect x="-44" y="-14" width="88" height="28" rx="6" class="node-satellite" />
+      <text x="0" y="4" text-anchor="middle" class="node-text">PYTHON / API</text>
+    </g>
+
+    <!-- Satellite Node 5: Geospatial (Top Center) -->
+    <g transform="translate(740, 60)">
+      <rect x="-42" y="-12" width="84" height="24" rx="5" class="node-satellite" />
+      <text x="0" y="3" text-anchor="middle" class="node-text">MAPLIBRE / GIS</text>
+    </g>
+  </g>
+</svg>
