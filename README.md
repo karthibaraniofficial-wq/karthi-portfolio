@@ -4,10 +4,20 @@
 
 A premium personal developer portfolio website engineered as an interactive operational command dashboard. Blends the aesthetics of a high-end AI research lab, Linear/Raycast design language, and a 60 FPS planetary intelligence system.
 
+<div align="center">
+
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-karthi--portfolio--delta.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://karthi-portfolio-delta.vercel.app)
+[![React 19](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+
+</div>
+
 ---
 
 ## ⚡ Live Deployments & Key Links
 
+- **🌐 Live Developer Portfolio:** [https://karthi-portfolio-delta.vercel.app](https://karthi-portfolio-delta.vercel.app)
 - **Flagship Planetary Digital Twin (EarthMind):** [earthmind.vercel.app](https://earthmind.vercel.app)
 - **CivicFlow AI (Autonomous Dispatch):** [civilai-mu.vercel.app](https://civilai-mu.vercel.app)
 - **LinuxPilot AI (Linux Telemetry & Ops):** [linuxpilot.vercel.app](https://linuxpilot.vercel.app)

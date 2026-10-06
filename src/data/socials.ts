@@ -33,6 +33,14 @@ export const SOCIALS: SocialLink[] = [
     type: 'live'
   },
   {
+    name: 'Live Portfolio',
+    url: 'https://karthi-portfolio-delta.vercel.app',
+    handle: 'karthi-portfolio-delta.vercel.app',
+    icon: 'Sparkles',
+    verified: true,
+    type: 'live'
+  },
+  {
     name: 'Smart India Hackathon',
     url: 'https://github.com/karthibaraniofficial-wq',
     handle: 'Team Targaryen (SIH26167)',
@@ -53,6 +61,7 @@ export const GITHUB_TELEMETRY = {
     { name: 'Other', percentage: 4.7, color: '#89e051' }
   ],
   verifiedProductionDeployments: [
+    { name: 'Karthi Portfolio (Live)', url: 'https://karthi-portfolio-delta.vercel.app', status: 'Operational 200' },
     { name: 'EARTHMIND', url: 'https://earthmind.vercel.app', status: 'Operational 200' },
     { name: 'CIVICFLOW AI', url: 'https://civilai-mu.vercel.app', status: 'Operational 200' },
     { name: 'LinuxPilot AI', url: 'https://linuxpilot.vercel.app', status: 'Operational 200' },
