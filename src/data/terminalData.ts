@@ -47,7 +47,7 @@ export const TERMINAL_COMMANDS: Record<string, TerminalCommandResponse> = {
   projects: {
     type: 'text',
     output: [
-      'VERIFIED PRODUCTION REGISTRY (11 PUBLIC REPOSITORIES):',
+      'VERIFIED PRODUCTION REGISTRY (12 PUBLIC REPOSITORIES):',
       '  [01] EARTHMIND        - Planetary Environmental Intelligence OS (https://earthmind.vercel.app)',
       '  [02] CIVICFLOW AI     - Autonomous 6-Agent Municipal Dispatch (https://civilai-mu.vercel.app)',
       '  [03] LinuxPilot AI    - Natural-Language Linux Operations Layer (https://linuxpilot.vercel.app)',
@@ -58,7 +58,8 @@ export const TERMINAL_COMMANDS: Record<string, TerminalCommandResponse> = {
       '  [08] THE_LOST_CORE    - Procedural Engine Simulation & Physics in Godot 4',
       '  [09] UPCYCLE AI       - Computer Vision Waste Classification & Upcycling Engine',
       '  [10] GEMINI CLONE     - Full-Stack Streaming Multimodal Generative Studio',
-      '  [11] NIKE AI STUDIO   - Interactive 3D Generative Product Experience in WebGL'
+      '  [11] NIKE AI STUDIO   - Interactive 3D Generative Product Experience in WebGL',
+      '  [12] ROADWISE ELITE   - Autonomous 3D Motorcycle Delivery & Traffic Simulator (https://roadwise-game.vercel.app)'
     ]
   },
   flagship: {

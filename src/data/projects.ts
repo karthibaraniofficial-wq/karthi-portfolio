@@ -307,5 +307,33 @@ export const PROJECTS: Project[] = [
     tags: ['Three.js', 'WebGL', 'PBR Shaders', 'React Three Fiber', 'Tailwind CSS', 'TypeScript'],
     repoUrl: 'https://github.com/karthibaraniofficial-wq/NIKE',
     featured: false
+  },
+  {
+    id: 'roadwise',
+    sysId: 'SYS_12',
+    title: 'ROADWISE ELITE',
+    tagline: 'Autonomous 3D Indian Motorcycle Delivery & Traffic-Rules Engine',
+    category: 'Geospatial & 3D',
+    status: 'Production Live • 60 FPS WebGL',
+    statusType: 'live',
+    description:
+      'High-performance browser-based 3D motorcycle delivery and traffic compliance simulator. Generates a deterministic procedural Indian metropolitan network across 8 interconnected districts, featuring A* road-graph routing, intelligent multi-agent traffic AI, progressive braking physics, dynamic weather/events, and Firebase Cloud Firestore multi-slot persistence.',
+    architectureHighlights: [
+      'Deterministic procedural road graph with 8 districts, flyovers, roundabouts, and elevation',
+      'Real-time A* pathfinding engine respecting one-way constraints and legal junction turns',
+      'Multi-agent traffic simulation with pedestrian crossing awareness and emergency vehicle yielding',
+      'Multi-slot cloud persistence backed by Firebase Authentication and Firestore security rules'
+    ],
+    metrics: [
+      { label: 'Render Target', value: '60 FPS WebGL' },
+      { label: 'Districts', value: '8 Interconnected' },
+      { label: 'Test Suites', value: '16/16 Verified' },
+      { label: 'Cloud Persistence', value: 'Firebase / Firestore' }
+    ],
+    tags: ['Three.js', 'React 19', 'TypeScript', 'A* Pathfinding', 'Firebase Auth', 'Firestore', 'Procedural World'],
+    liveUrl: 'https://roadwise-game.vercel.app',
+    repoUrl: 'https://github.com/karthibaraniofficial-wq/ROADWISE-GAME',
+    featured: true
   }
 ];
+
